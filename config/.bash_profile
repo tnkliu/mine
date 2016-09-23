@@ -16,3 +16,11 @@ export GOROOT=/storage/server/go
 export GOPATH=/storage/server/gopath
 export GOBIN=$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:$GOBIN
+
+# Node
+export NODE_PATH=/storage/server/nodejs
+export PATH=$PATH:$NODE_PATH/bin
+
+# Alias
+alias vi='/storage/server/vim/bin/vim'
+alias vim='/storage/server/vim/bin/vim'
