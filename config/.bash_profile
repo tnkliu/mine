@@ -11,6 +11,9 @@ PATH=$PATH:$HOME/bin
 
 export PATH
 
+# Mine
+export PATH=/storage/bin:$PATH
+
 # Golang
 export GOROOT=/storage/server/go
 export GOPATH=/storage/server/gopath
