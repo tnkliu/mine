@@ -28,3 +28,4 @@ export PATH=$PATH:$NODE_PATH/bin
 alias vi='/storage/server/vim/bin/vim'
 alias vim='/storage/server/vim/bin/vim'
 alias gll='ls -lha'
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
