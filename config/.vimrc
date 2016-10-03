@@ -14,8 +14,9 @@ set hlsearch "高亮显示搜索结果
 set backspace=indent,eol,start "设置回退键
 set showcmd "设置显示敲击命令
 set list listchars=nbsp:·,tab:>·,trail:· "设置显示空格和tab情况
-set mouse=v "允许鼠标还有可以设置成mouse=a,设置成v可以鼠标选择后直接复制到剪切板
+set mouse=a "允许鼠标还有可以设置成mouse=a,设置成v可以鼠标选择后直接复制到剪切板
 set nocompatible "关闭兼容模式，去掉有关vi一致性模式，避免以前版本的bug和局限
+set completeopt=longest,menu "下拉菜单设置
 
 " 配置项
 syntax enable "开启语法高亮功能
@@ -59,14 +60,20 @@ nmap <Leader>pp "+p
 nmap <C-v> "+p
 
 " 风格设置
+set background=dark "背景使用黑色
+let g:molokai_original = 1
+let g:rehash256 = 1
 colorscheme molokai
 
 " 插件管理
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'fatih/vim-go' "Golang
-"Plugin 'Valloric/YouCompleteMe' "YCM
+Plugin 'Valloric/YouCompleteMe' "YCM
 Plugin 'scrooloose/nerdtree' "查看工程文件
+Plugin 'SirVer/ultisnips' "自动完成&格式风格
+Plugin 'honza/vim-snippets' "自动完成&格式风格
+Plugin 'nathanaelkane/vim-indent-guides' "显示缩进风格
 Plugin 'Lokaltog/vim-easymotion' "快速移动
 Plugin 'fholgado/minibufexpl.vim' "书签导航
 Plugin 'kien/ctrlp.vim' "快速搜索
