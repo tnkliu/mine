@@ -17,8 +17,8 @@ export PATH=/storage/bin:$PATH
 # Golang
 export GOROOT=/storage/server/go
 export GOPATH=/storage/server/gopath
-export GOBIN=$GOROOT/bin:$GOPATH/bin
-export PATH=$PATH:$GOBIN
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOBIN
 
 # Node
 export NODE_PATH=/storage/server/nodejs

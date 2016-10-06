@@ -20,6 +20,7 @@ set completeopt=longest,menu "下拉菜单设置
 
 " 配置项
 syntax enable "开启语法高亮功能
+syntax on "允许用指定语法高亮配色方案替换默认方案
 filetype plugin on "根据侦测到的不同类型加载对应的插件
 filetype indent on "自适应不同语言的智能缩进
 
@@ -71,6 +72,7 @@ call vundle#begin()
 Plugin 'fatih/vim-go' "Golang
 Plugin 'Valloric/YouCompleteMe' "YCM
 Plugin 'scrooloose/nerdtree' "查看工程文件
+Plugin 'majutsushi/tagbar' "函数标签
 Plugin 'SirVer/ultisnips' "自动完成&格式风格
 Plugin 'honza/vim-snippets' "自动完成&格式风格
 Plugin 'nathanaelkane/vim-indent-guides' "显示缩进风格
@@ -88,3 +90,7 @@ call vundle#end()
 source ~/.vim/config/vim-go
 source ~/.vim/config/nerdtree
 source ~/.vim/config/tagbar
+source ~/.vim/config/ctrlp
+source ~/.vim/config/ultisnips
+source ~/.vim/config/vim-airline
+source ~/.vim/config/vim-indent-guides
