@@ -73,8 +73,8 @@ Plugin 'fatih/vim-go' "Golang
 Plugin 'Valloric/YouCompleteMe' "YCM
 Plugin 'scrooloose/nerdtree' "查看工程文件
 Plugin 'majutsushi/tagbar' "函数标签
-Plugin 'SirVer/ultisnips' "自动完成&格式风格
-Plugin 'honza/vim-snippets' "自动完成&格式风格
+"Plugin 'SirVer/ultisnips' "自动完成&格式风格
+"Plugin 'honza/vim-snippets' "自动完成&格式风格
 Plugin 'nathanaelkane/vim-indent-guides' "显示缩进风格
 Plugin 'Lokaltog/vim-easymotion' "快速移动
 Plugin 'fholgado/minibufexpl.vim' "书签导航
