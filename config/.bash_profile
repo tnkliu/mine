@@ -28,6 +28,7 @@ export PATH=$PATH:$NODE_PATH/bin
 alias vi='/storage/server/vim/bin/vim'
 alias vim='/storage/server/vim/bin/vim'
 alias gll='ls -lha'
+alias gor='go run'
 alias gita='git add .'
 alias gitc='git commit -m "Update"'
 alias gitd='git difftool'
