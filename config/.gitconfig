@@ -11,3 +11,16 @@
 	email = tnkliu@gmail.com
 [commit]
 	template = /Users/liu/.stCommitMsg
+[diff]
+	tool = bc4
+[difftool "bc4"]
+	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE
+[difftool]
+	prompt = false
+[merge]
+	tool = bc4
+[mergetool "bc4"]
+	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED
+[mergetool]
+	trustExitCode = true
+	keepBackup = false
