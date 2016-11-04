@@ -11,16 +11,19 @@
 	email = tnkliu@gmail.com
 [commit]
 	template = /Users/liu/.stCommitMsg
-[diff]
-	tool = bc4
 [difftool "bc4"]
 	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE
+	#cmd = bcompare --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
+	prompt = false
+[diff]
+	tool = bc4
+[mergetool "bc4"]
+	#cmd = /usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED
+	cmd = bcomp --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+	keepBackup = false
+[mergetool]
 	prompt = false
 [merge]
 	tool = bc4
-[mergetool "bc4"]
-	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED
-[mergetool]
-	trustExitCode = true
-	keepBackup = false
