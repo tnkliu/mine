@@ -1,0 +1,13 @@
+[core]
+	excludesfile = /Users/liu/.gitignore_global
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
+	path = -ro
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = tnkliu
+	email = tnkliu@gmail.com
+[commit]
+	template = /Users/liu/.stCommitMsg
